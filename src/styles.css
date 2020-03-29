@@ -3,3 +3,17 @@
 @import '../node_modules/alertifyjs/build/css/themes/bootstrap.min.css';
 @import '../node_modules/font-awesome/css/font-awesome.min.css';
 
+
+.invalid-feedback {
+  width: 100%;
+  margin-top: .25rem;
+  font-size: 80%;
+  color: #df382c;
+}
+.form-control.is-invalid, .was-validated .form-control:invalid {
+  border-color: #df382c;
+  padding-right: calc(1.5em + .75rem);
+  background-repeat: no-repeat;
+  background-position: center right calc(.375em + .1875rem);
+  background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+}

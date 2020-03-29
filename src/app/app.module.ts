@@ -36,6 +36,9 @@ import { ListsResolver } from './_resolvers/lists.resolver';
 import { MessagesResolver } from './_resolvers/messages.resolver';
 import { AdminService } from './_services/admin.service';
 import { NgxSpinnerModule } from "ngx-spinner";
+import { DateOnlyDirective } from './_directives/date-only.directive';
+import { NumericOnlyDirective } from './_directives/numeric-only.directive';
+import { alphaNumericOnlyDirective } from './_directives/alpha-numeric-only.directive';
 
 @NgModule({
   declarations: [
@@ -58,7 +61,10 @@ import { NgxSpinnerModule } from "ngx-spinner";
     FaqComponent,
     InboxComponent,
     SentComponent,
-    UpgradeComponent
+    UpgradeComponent,
+    DateOnlyDirective,
+    NumericOnlyDirective,
+    alphaNumericOnlyDirective
 
   ],
   imports: [
