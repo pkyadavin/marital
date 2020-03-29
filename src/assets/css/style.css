@@ -1,3 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/alertifyjs/build/css/alertify.css';
+@import '../node_modules/alertifyjs/build/css/themes/bootstrap.min.css';
+@import '../node_modules/font-awesome/css/font-awesome.min.css';
+
+
 /*
 Author: W3layout
 Author URL: http://w3layouts.com
@@ -11,7 +17,7 @@ p {margin: 0;}
 html, body{
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 100%;
-    background:#fff; 
+    background:#fff;
 }
 body a{
 	transition:0.5s all;
@@ -209,7 +215,7 @@ body a{
 }
 .dropdown-menu.columns-2 {
     min-width: 400px;
-} 
+}
 .dropdown-menu.columns-3 {
     min-width:550px;
 }
@@ -238,23 +244,23 @@ body a{
 .dropdown-menu {
     right: 0 !important;
     left:inherit;
-}    
+}
 .nav_bottom{
 	background:none;
 }
-.nav-tabs > li > a, 
-.nav-tabs > li > a:hover, 
-.nav-tabs > li > a:focus, 
-.nav-tabs > li.active > a, 
+.nav-tabs > li > a,
+.nav-tabs > li > a:hover,
+.nav-tabs > li > a:focus,
+.nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
   border: none;
   border-radius: 0;
 }
 .nav-list { border-bottom: 1px solid #eee; }
-.nav-list > li { 
+.nav-list > li {
   padding:20px 15px 15px;
-  border-left: 1px solid #eee; 
+  border-left: 1px solid #eee;
   margin-right: 0 !important;
 }
 .nav-list > li:last-child { border-right: 1px solid #eee; }
@@ -317,7 +323,7 @@ ul.nav_1 li.last{
     vertical-align: middle;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
-    
+
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale;
@@ -341,7 +347,7 @@ ul.nav_1 li.last{
   left: 0;
   right: 0;
   background:#555;
-  
+
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 50%;
@@ -520,45 +526,45 @@ input#submit-btn {
 	overflow:hidden;
 }
 .col_1.frame-border {
-	background-color:#FFF; 
+	background-color:#FFF;
 	border:18px solid #FFF;
 }
 .col_1 img {
 	width:100%;
 }
 .col_1 .layer {
-	position: absolute; 
+	position: absolute;
 	margin: auto;
-	top: 0; 
-	right: 0; 
+	top: 0;
+	right: 0;
 	bottom: 0;
 	left: 0;
 	width:100%;
 	height:100%;
 }
 .col_1 .layer.second-image{
-	opacity: 0; 
+	opacity: 0;
 }
 .col_1 .layer.opacity-black-overlay{
 	background-color: rgba(0, 0, 0, 0.4);
-	opacity: 0.3; 
+	opacity: 0.3;
 }
 .col_1 .layer.hidden-black-overlay{
-    opacity: 0; 
+    opacity: 0;
 }
 .col_1 .layer.photo-caption{
-	opacity: 1; 
+	opacity: 1;
 }
 .col_1 .layer.hidden-photo-caption{
-	opacity: 0; 
+	opacity: 0;
 }
 .col_1 .layer.border-photo-caption{
 	opacity: 1;
-	border:1px solid #FFF; 
+	border:1px solid #FFF;
 }
 .col_1 .layer.hidden-border-photo-caption{
 	opacity: 0;
-	border:1px solid #FFF; 
+	border:1px solid #FFF;
 }
 .col_1 .layer.link{
 	opacity: 1;
@@ -567,13 +573,13 @@ input#submit-btn {
 	opacity: 0;
 }
 .col_1:hover .layer.hover-animation.fade-in{
-	opacity: 1; 
+	opacity: 1;
 }
 .col_1:hover .layer.hover-animation.half-fade-in{
-	opacity: 0.3; 
+	opacity: 0.3;
 }
 .col_1:hover .layer.hover-animation.fade-out{
-	opacity: 0; 
+	opacity: 0;
 }
 .col_1 a:hover{
 	color:#000;
@@ -582,13 +588,13 @@ input#submit-btn {
 /* on Hover Animation */
 /* ----------------------------------------------*/
 .col_1 img.hover-animation, .col_1:hover img.hover-animation{
-	-webkit-transition: all 0.5s; 
+	-webkit-transition: all 0.5s;
 		-ms-transition: all 0.5s;
 		 -o-transition: all 0.5s;
 			transition: all 0.5s;
 }
 .col_1 .layer.hover-animation, .col_1:hover .layer.hover-animation {
-	-webkit-transition: all 0.5s; 
+	-webkit-transition: all 0.5s;
 		-ms-transition: all 0.5s;
 		 -o-transition: all 0.5s;
 			transition: all 0.5s;
@@ -636,10 +642,10 @@ input#submit-btn {
 /* 09.3.3 on Hover Zoom In					 	 */
 /* ----------------------------------------------*/
 .col_1:hover img.hover-animation.image-zoom-in {
-	-webkit-transform: scale(1.1); 
+	-webkit-transform: scale(1.1);
 		-ms-transform: scale(1.1);
-		 -o-transform: scale(1.1);  
-			transform: scale(1.1);		
+		 -o-transform: scale(1.1);
+			transform: scale(1.1);
 }
 
 /* 09.3.4 on Hover Zoom In and Rotate	 	 	*/
@@ -647,8 +653,8 @@ input#submit-btn {
 .col_1:hover img.hover-animation.image-zoom-rotate {
 	-webkit-transform: rotate(7deg) scale(1.1);
 		-ms-transform: rotate(7deg) scale(1.1);
-		 -o-transform: rotate(7deg) scale(1.1);  
-			transform: rotate(7deg) scale(1.1);			
+		 -o-transform: rotate(7deg) scale(1.1);
+			transform: rotate(7deg) scale(1.1);
 }
 .hover_alignment{
     position: absolute;
@@ -1202,7 +1208,7 @@ td.day_label {
 }
 a#profile-tab, a#home-tab, a#profile-tab1{
     color: #fff;
-} 
+}
 .grid_3{
 	padding:5em 0;
 }
@@ -1521,7 +1527,7 @@ h3.m_2{
     text-decoration: none;
     background-color: #f0f0f0;
 }
-.menu ul li a {	
+.menu ul li a {
 	width: 100%;
     display: block;
     font-size:12px;
@@ -1542,7 +1548,7 @@ h3.m_2{
 }
 ul.kid-menu{
 	padding: 0;
-	margin: 0;	
+	margin: 0;
 }
 ul.kid-menu li{
 	list-style: none;
@@ -2372,7 +2378,7 @@ dl.faq-list{
     display: block;
     font-weight: bold;
     margin: 0;
-} 
+}
 .faq-list .marker1{
     position: absolute;
     top: 0;
@@ -2380,7 +2386,7 @@ dl.faq-list{
     display: block;
     font-weight: bold;
     margin: 0;
-} 
+}
 p.m_4 {
     padding-left: 30px;
     font-size:0.85em;
@@ -2548,13 +2554,13 @@ ul.feature_list.feature_list1 {
 }
 #colorNav li ul {
     width: 150px;
-    margin-left: -56px;    
+    margin-left: -56px;
 }
 }
 @media (max-width:1024px){
 .banner_info h3 {
     font-size: 3em;
-}	
+}
 .hvr-shutter-out-horizontal {
     padding: 8px 25px;
     font-size: 18px;
@@ -2595,7 +2601,7 @@ ul.nav_1 li {
 }
 #colorNav li ul {
    width: 150px;
-   margin-left:-40px;    
+   margin-left:-40px;
    top: 29px;
 }
 a.order-btn {
@@ -2617,7 +2623,7 @@ ul.nav_1 {
 }
 .grid_1 h1, .grid_2 h2, .bg h3{
     font-size: 2em;
-}    
+}
 .heart-divider {
    margin: 1em auto 2em;
 }
@@ -2715,7 +2721,7 @@ ul.nav_1 {
 @media (max-width: 768px){
 .banner_info h3 {
     font-size: 2.5em;
-}	
+}
 .hvr-shutter-out-horizontal {
     padding: 6px 15px;
     font-size: 16px;
@@ -2731,7 +2737,7 @@ ul.nav_1 {
 }
 label.gender_1 {
     margin-right: 0px;
-}    
+}
 .banner {
     min-height: 429px;
 }
@@ -2934,16 +2940,16 @@ p + .addr, .addr + .addr, .terms + .addr {
 }
 #contact-form input[type='text'], #contact-form textarea {
     padding: 10px;
-}    
+}
 #contact-form input[type="submit"] {
     padding:10px;
-}   
+}
 .login_left {
     margin-bottom: 2em;
 }
 label {
     font-size: 13px;
-} 
+}
 .btn_1 {
     padding: 6px 20px;
 }
@@ -2971,7 +2977,7 @@ ul.login_details1 {
 .banner_info h3 {
     font-size: 1.5em;
     margin-bottom: 15px;
-}	
+}
 .hvr-shutter-out-horizontal {
     font-size: 13px;
 }
@@ -2984,10 +2990,10 @@ ul.login_details1 {
 }
 label.gender_1 {
     font-size: 12px;
-}    
+}
 .input-group input[type="text"], select, input.transparent{
     font-size: 10px;
-}    
+}
 input#submit-btn {
     font-size: 0.8125em;
     padding: 3px 8px;
@@ -3054,7 +3060,7 @@ i.icon_2 {
 }
 ul.phone li.phone_right p {
     font-size: 12px;
-}    
+}
 .row {
     margin-left: 0;
     margin-right: 0;
@@ -3083,7 +3089,7 @@ ul.phone li.phone_right p {
 .hvr-shutter-out-horizontal {
     padding: 4px 8px;
     font-size: 11px;
-}	
+}
 .banner_info {
     margin: 1em 0 0 0;
 }
@@ -3166,7 +3172,7 @@ ul.match_box {
 }
 ol.terms_list li {
     font-size: 0.8125em;
-}    
+}
 .nbs-flexisel-nav-right:after, .nbs-flexisel-nav-left:after  {
     top:20px;
 }
@@ -3181,7 +3187,7 @@ ol.terms_list li {
 }
 .paid_people h1 {
     font-size: 1.3em;
-}    
+}
 .search_left {
     margin-bottom: 1em;
 }
@@ -3235,7 +3241,7 @@ form#contact-form {
 @media (max-width:384px){
 .wrap_1 {
     width: 350px;
-}	
+}
 .inline-block {
     margin-bottom:2px;
 }
@@ -3349,7 +3355,7 @@ input#submit-btn {
 @media (max-width:320px){
 .wrap_1 {
     width: 330px;
-}	
+}
 #colorNav li ul li a {
     font-size: 11px;
 }
@@ -3392,7 +3398,7 @@ a.religion_1 {
 }
 .col_2 h4 {
     font-size: 1.1em;
-}    
+}
 .copy p {
     font-size: 0.8125em;
 }
@@ -3436,7 +3442,7 @@ a.religion_1 {
 }
 .view_profile h3 {
     font-size: 1.1em;
-}    
+}
 .view_profile1 {
     margin: 2em 0 0 0;
 }
@@ -3448,10 +3454,10 @@ ul.profile_item li.profile_item-desc h4, ul.profile_item li.profile_item-desc h5
 }
 .profile_top h2 {
     font-size: 0.85em;
-}  
+}
 .breadcrumb1 {
     margin-bottom: 1em;
-}  
+}
 .pagination>li >a {
     padding: 4px 10px;
     font-size: 12px;
@@ -3493,7 +3499,7 @@ p.m_4{
 }
 a.photo_view {
     padding: 5px 8px;
-}    
+}
 .pricing-table-grid ul li span {
     padding:7px;
     font-size: 13px;
