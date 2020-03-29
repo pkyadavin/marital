@@ -1,5 +1,5 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserModule, HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,7 +22,19 @@ import { FaqComponent } from './search/faq/faq.component';
 import { InboxComponent } from './messages/inbox/inbox.component';
 import { SentComponent } from './messages/sent/sent.component';
 import { UpgradeComponent } from './messages/upgrade/upgrade.component';
-
+import { AuthService } from './_services/auth.service';
+import { ErrorInterceptorProvider } from './_services/error.interceptor';
+import { AlertifyService } from './_services/alertify.service';
+import { AuthGuard } from './_guards/auth.guard';
+import { UserService } from './_services/user.service';
+import { MemberDetailResolver } from './_resolvers/member-detail.resolver';
+import { MemberListResolver } from './_resolvers/member-list.resolver';
+import { MemberEditResolver } from './_resolvers/member-edit.resolver';
+//import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
+import { ListsResolver } from './_resolvers/lists.resolver';
+import { MessagesResolver } from './_resolvers/messages.resolver';
+import { AdminService } from './_services/admin.service';
+import { NgxSpinnerModule } from "ngx-spinner";
 
 @NgModule({
   declarations: [
@@ -52,7 +64,24 @@ import { UpgradeComponent } from './messages/upgrade/upgrade.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+   providers: [
+      AuthService,
+      ErrorInterceptorProvider,
+      AlertifyService,
+      AuthGuard,
+      UserService,
+      MemberDetailResolver,
+      MemberListResolver,
+      MemberEditResolver,
+     // PreventUnsavedChanges,
+      ListsResolver,
+      MessagesResolver,
+      NgxSpinnerModule,
+      AdminService,
+    //  { provide: HAMMER_GESTURE_CONFIG, useClass: CustomHammerConfig }
+    ],
+    schemas: [CUSTOM_ELEMENTS_SCHEMA],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }
